@@ -9,4 +9,8 @@ public class UserNotFoundException extends RuntimeException {
     public UserNotFoundException(String errorMessage) {
         super(errorMessage);
     }
+
+//    public String UserNotFoundException2() {
+//        return "UserNotFoundException222";
+//    }
 }

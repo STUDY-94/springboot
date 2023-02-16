@@ -22,7 +22,7 @@ public class CustomizedExceptionHandler extends ResponseEntityExceptionHandler {
         ExceptionResponse exceptionResponse = new ExceptionResponse(new Date(), e.getMessage(), request.getDescription(false));
         return new ResponseEntity<>(exceptionResponse, HttpStatus.INTERNAL_SERVER_ERROR);
     }
-//
+
 //    //UserNotFoundException.class 예외가 발생 했을 때 작동
     @ExceptionHandler(UserNotFoundException.class)
     public final ResponseEntity<Object> userFoundException(Exception e, WebRequest request) {
