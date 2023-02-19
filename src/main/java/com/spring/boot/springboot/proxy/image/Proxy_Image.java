@@ -1,4 +1,4 @@
-package com.spring.boot.springboot.proxy;
+package com.spring.boot.springboot.proxy.image;
 
 public class Proxy_Image implements Image{
     private Real_Image realImage;

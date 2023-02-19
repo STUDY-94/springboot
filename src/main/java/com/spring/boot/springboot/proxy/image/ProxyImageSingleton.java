@@ -1,4 +1,4 @@
-package com.spring.boot.springboot.proxy;
+package com.spring.boot.springboot.proxy.image;
 
 import lombok.Data;
 

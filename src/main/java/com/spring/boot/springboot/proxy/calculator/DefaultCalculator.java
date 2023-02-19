@@ -1,6 +1,6 @@
-package com.spring.boot.springboot.proxy;
+package com.spring.boot.springboot.proxy.calculator;
 
-import java.lang.reflect.InvocationHandler;
+import com.spring.boot.springboot.proxy.calculator.Calculator;
 
 public class DefaultCalculator implements Calculator {
     @Override

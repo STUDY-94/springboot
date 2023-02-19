@@ -1,4 +1,4 @@
-package com.spring.boot.springboot.proxy;
+package com.spring.boot.springboot.proxy.image;
 
 public class Real_Image implements Image{
     private String fileName;

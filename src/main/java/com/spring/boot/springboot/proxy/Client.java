@@ -1,6 +1,7 @@
 package com.spring.boot.springboot.proxy;
 
-import java.lang.reflect.Proxy;
+import com.spring.boot.springboot.proxy.image.Image;
+import com.spring.boot.springboot.proxy.image.ProxyImageSingleton;
 
 public class Client {
     public static void main(String[] args) {
