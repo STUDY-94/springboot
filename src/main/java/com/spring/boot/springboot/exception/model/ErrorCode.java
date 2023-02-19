@@ -17,6 +17,7 @@ public enum ErrorCode {
     // Member
     EMAIL_DUPLICATION(400, "M001", "Email is Duplication"),
     LOGIN_INPUT_INVALID(400, "M002", "Login input is invalid"),
+    MEMBER_NOT_FOUND(400, "M003", "no Member on search condition"),
 
     // Coupon
     COUPON_ALREADY_USE(400, "CO001", "Coupon was already used"),

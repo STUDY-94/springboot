@@ -14,28 +14,28 @@ public class LoggingAspect {
 
     private long startTime;
 
-    @Before("execution(public String||boolean com.spring..*.*(..))")
-    public void onBeforeHandler(JoinPoint joinPoint) {
-        startTime = System.nanoTime();
-        System.out.println("start : " + startTime);
-    }
-
-    @After("execution(* com.spring..*(..))")
-    public void onAfterHandler(JoinPoint joinPoint) {
-        long endTime = System.nanoTime();
-        System.out.println("elapsed time : " + (endTime - startTime));
-    }
-
-    @Around("execution(* check*()) && within(com.spring..*)")
-    public String around(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
-        String returnValue = null;
-        try {
-            returnValue = (String) proceedingJoinPoint.proceed();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        returnValue = "**" + returnValue + "**";
-        return  returnValue;
-    }
+//    @Before("execution(public String||boolean com.spring..*.*(..))")
+//    public void onBeforeHandler(JoinPoint joinPoint) {
+//        startTime = System.nanoTime();
+//        System.out.println("start : " + startTime);
+//    }
+//
+//    @After("execution(* com.spring..*(..))")
+//    public void onAfterHandler(JoinPoint joinPoint) {
+//        long endTime = System.nanoTime();
+//        System.out.println("elapsed time : " + (endTime - startTime));
+//    }
+//
+//    @Around("execution(* check*()) && within(com.spring..*)")
+//    public String around(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
+//        String returnValue = null;
+//        try {
+//            returnValue = (String) proceedingJoinPoint.proceed();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//
+//        returnValue = "**" + returnValue + "**";
+//        return  returnValue;
+//    }
 }

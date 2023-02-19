@@ -16,14 +16,14 @@ import java.util.Date;
 //@ControllerAdvice
 public class CustomizedExceptionHandler extends ResponseEntityExceptionHandler {
 
-//    //Excpetion을 통해 예외를 받고 WebRequest를 통해 어디서 에러가 발생했는지 받는다
+    //Excpetion을 통해 예외를 받고 WebRequest를 통해 어디서 에러가 발생했는지 받는다
     @ExceptionHandler(Exception.class)
     public final ResponseEntity<Object> allException(Exception e, WebRequest request) {
         ExceptionResponse exceptionResponse = new ExceptionResponse(new Date(), e.getMessage(), request.getDescription(false));
         return new ResponseEntity<>(exceptionResponse, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
-//    //UserNotFoundException.class 예외가 발생 했을 때 작동
+    //UserNotFoundException.class 예외가 발생 했을 때 작동
     @ExceptionHandler(UserNotFoundException.class)
     public final ResponseEntity<Object> userFoundException(Exception e, WebRequest request) {
         ExceptionResponse exceptionResponse = new ExceptionResponse(new Date(), e.getMessage(), request.getDescription(false));
