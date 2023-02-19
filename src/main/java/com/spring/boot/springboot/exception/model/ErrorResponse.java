@@ -1,4 +1,4 @@
-package com.spring.boot.springboot.exception;
+package com.spring.boot.springboot.exception.model;
 
 import lombok.AccessLevel;
 import lombok.Getter;

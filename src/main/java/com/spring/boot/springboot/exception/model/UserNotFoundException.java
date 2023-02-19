@@ -1,4 +1,4 @@
-package com.spring.boot.springboot.aop;
+package com.spring.boot.springboot.exception.model;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

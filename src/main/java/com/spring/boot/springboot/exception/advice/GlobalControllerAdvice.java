@@ -1,5 +1,6 @@
-package com.spring.boot.springboot.aop;
+package com.spring.boot.springboot.exception.advice;
 
+import com.spring.boot.springboot.exception.model.ExceptionResponse;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -8,7 +9,7 @@ import org.springframework.web.context.request.WebRequest;
 import java.net.BindException;
 import java.util.Date;
 
-@RestControllerAdvice //@RestController+@ControllerAdvice
+//@RestControllerAdvice //@RestController+@ControllerAdvice
 public class GlobalControllerAdvice {
 
     @ExceptionHandler(BindException.class)
@@ -19,6 +20,5 @@ public class GlobalControllerAdvice {
         System.out.println("global error Code : " + errorMessage);
         return  errorMessage;
     }
-
 
 }

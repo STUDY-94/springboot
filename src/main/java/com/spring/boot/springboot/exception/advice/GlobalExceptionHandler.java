@@ -1,5 +1,8 @@
-package com.spring.boot.springboot.exception;
+package com.spring.boot.springboot.exception.advice;
 
+import com.spring.boot.springboot.exception.model.BusinessException;
+import com.spring.boot.springboot.exception.model.ErrorCode;
+import com.spring.boot.springboot.exception.model.ErrorResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

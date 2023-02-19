@@ -1,4 +1,4 @@
-package com.spring.boot.springboot.exception;
+package com.spring.boot.springboot.exception.model;
 
 public class BusinessException extends RuntimeException {
 

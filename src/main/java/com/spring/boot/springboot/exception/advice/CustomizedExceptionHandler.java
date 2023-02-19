@@ -1,7 +1,7 @@
-package com.spring.boot.springboot.handler;
+package com.spring.boot.springboot.exception.advice;
 
-import com.spring.boot.springboot.aop.ExceptionResponse;
-import com.spring.boot.springboot.aop.UserNotFoundException;
+import com.spring.boot.springboot.exception.model.ExceptionResponse;
+import com.spring.boot.springboot.exception.model.UserNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -13,7 +13,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 import java.util.Date;
 
 @RestController
-@ControllerAdvice
+//@ControllerAdvice
 public class CustomizedExceptionHandler extends ResponseEntityExceptionHandler {
 
 //    //Excpetion을 통해 예외를 받고 WebRequest를 통해 어디서 에러가 발생했는지 받는다

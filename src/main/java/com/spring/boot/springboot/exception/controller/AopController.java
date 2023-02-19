@@ -1,7 +1,7 @@
-package com.spring.boot.springboot.controller;
+package com.spring.boot.springboot.exception.controller;
 
-import com.spring.boot.springboot.aop.ExceptionResponse;
-import com.spring.boot.springboot.aop.UserNotFoundException;
+import com.spring.boot.springboot.exception.model.ExceptionResponse;
+import com.spring.boot.springboot.exception.model.UserNotFoundException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;

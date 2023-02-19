@@ -1,4 +1,4 @@
-package com.spring.boot.springboot.controller;
+package com.spring.boot.springboot.exception.controller;
 
 import org.springframework.boot.autoconfigure.web.ServerProperties;
 import org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController;

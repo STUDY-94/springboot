@@ -1,4 +1,4 @@
-package com.spring.boot.springboot.controller;
+package com.spring.boot.springboot.aop;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
