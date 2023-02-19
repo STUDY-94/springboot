@@ -4,9 +4,11 @@ import org.springframework.boot.autoconfigure.web.ServerProperties;
 import org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController;
 import org.springframework.boot.autoconfigure.web.servlet.error.ErrorViewResolver;
 import org.springframework.boot.web.servlet.error.ErrorAttributes;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -29,6 +31,10 @@ public class CustomErrorController extends BasicErrorController {
     public ModelAndView errorHtml(HttpServletRequest request,
                                   HttpServletResponse response) {
         log(request); // 로그 추가
+        HttpStatus status = getStatus(request);
+        if (status == HttpStatus.NOT_FOUND) {
+            return new ModelAndView("error/404");
+        }
         return super.errorHtml(request, response);
     }
 
