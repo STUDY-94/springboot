@@ -16,8 +16,9 @@ public class AopController {
 
     @GetMapping(value = "/user", produces = "text/plain; charset=utf-8")
     public String user(String id) {
-        throw new UserNotFoundException(String.format("존재하지 않는 회원 [ ID : %s ]", id));
+//        throw new UserNotFoundException(String.format("존재하지 않는 회원 [ ID : %s ]", id));
 //        return id;
+        return null;
     }
 
 //    @GetMapping(value="/user2")
