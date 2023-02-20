@@ -8,6 +8,7 @@ import javax.validation.constraints.NotEmpty;
 public class Member {
 
     @NotEmpty
+    @javax.validation.constraints.Email
     private String id;
     private String name;
 
