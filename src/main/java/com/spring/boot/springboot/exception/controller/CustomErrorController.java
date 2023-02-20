@@ -1,5 +1,6 @@
 package com.spring.boot.springboot.exception.controller;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.web.ServerProperties;
 import org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController;
 import org.springframework.boot.autoconfigure.web.servlet.error.ErrorViewResolver;
@@ -17,6 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 import java.util.Map;
 
+@Slf4j
 @Controller
 @RequestMapping("${server.error.path:${error.path:/error}}")
 public class CustomErrorController extends BasicErrorController {
@@ -26,6 +28,7 @@ public class CustomErrorController extends BasicErrorController {
                                  List<ErrorViewResolver> errorViewResolvers) {
         super(errorAttributes, serverProperties.getError(), errorViewResolvers);
     }
+    //https://supawer0728.github.io/2019/04/04/spring-error-handling/
 
     @RequestMapping(produces = MediaType.TEXT_HTML_VALUE)
     public ModelAndView errorHtml(HttpServletRequest request,
@@ -45,7 +48,6 @@ public class CustomErrorController extends BasicErrorController {
     }
 
     private void log(HttpServletRequest request) {
-//        log.error("error");
-        System.out.println("error");
+        log.error("error");
     }
 }
