@@ -35,9 +35,9 @@ public class CustomErrorController extends BasicErrorController {
                                   HttpServletResponse response) {
         log(request); // 로그 추가
         HttpStatus status = getStatus(request);
-        if (status == HttpStatus.NOT_FOUND) {
-            return new ModelAndView("error/404");
-        }
+//        if (status == HttpStatus.NOT_FOUND) {
+//            return new ModelAndView("error/404");
+//        }
         return super.errorHtml(request, response);
     }
 
