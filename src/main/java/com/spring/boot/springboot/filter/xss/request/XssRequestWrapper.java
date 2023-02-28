@@ -1,6 +1,7 @@
 package com.spring.boot.springboot.filter.xss.request;
 
-import org.apache.tomcat.util.http.fileupload.IOUtils;
+
+import org.apache.commons.io.IOUtils;
 
 import javax.servlet.ReadListener;
 import javax.servlet.ServletInputStream;
