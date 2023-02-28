@@ -19,7 +19,7 @@
 <script>
     function selectMembers() {
         $.ajax({
-            url: "/ajax/members", // 클라이언트가 HTTP 요청을 보낼 서버의 URL 주소
+            url: "http://172.30.1.30:8888/ajax/members", // 클라이언트가 HTTP 요청을 보낼 서버의 URL 주소
             data: { },  // HTTP 요청과 함께 서버로 보낼 데이터
             method: "GET",   // HTTP 요청 메소드(GET, POST 등)
             dataType: "text" // 서버에서 보내줄 데이터의 타입
