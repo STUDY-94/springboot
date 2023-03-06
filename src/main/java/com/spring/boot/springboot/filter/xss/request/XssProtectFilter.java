@@ -13,8 +13,8 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-@Component
-@Order(Ordered.HIGHEST_PRECEDENCE)
+//@Component
+//@Order(Ordered.HIGHEST_PRECEDENCE)
 public class XssProtectFilter implements Filter {
 
     @Override

@@ -1,4 +1,4 @@
-package com.spring.boot.springboot.filter.xss.response;
+package com.spring.boot.springboot.filter.xss;
 
 import com.fasterxml.jackson.core.SerializableString;
 import com.fasterxml.jackson.core.io.CharacterEscapes;
@@ -30,17 +30,18 @@ public class HTMLCharacterEscapes extends CharacterEscapes {
 
     @Override
     public SerializableString getEscapeSequence(int ch) {   //윈도우 이모지 관련 이슈 해결
-        SerializedString serializedString;
-        char charAt = (char) ch;
-        if (Character.isHighSurrogate(charAt) || Character.isLowSurrogate(charAt)) {
-            StringBuilder sb = new StringBuilder();
-            sb.append("\\u");
-            sb.append(String.format("%04x", ch));
-            serializedString = new SerializedString(sb.toString());
-        } else {
-            serializedString = new SerializedString(StringEscapeUtils.escapeHtml4(Character.toString(charAt)));
-        }
-        return serializedString;
+//        SerializedString serializedString;
+//        char charAt = (char) ch;
+//        if (Character.isHighSurrogate(charAt) || Character.isLowSurrogate(charAt)) {
+//            StringBuilder sb = new StringBuilder();
+//            sb.append("\\u");
+//            sb.append(String.format("%04x", ch));
+//            serializedString = new SerializedString(sb.toString());
+//        } else {
+//            serializedString = new SerializedString(StringEscapeUtils.escapeHtml4(Character.toString(charAt)));
+//        }
+//        return serializedString;
+        return new SerializedString(StringEscapeUtils.escapeHtml4(Character.toString((char)ch)));
     }
 }
 

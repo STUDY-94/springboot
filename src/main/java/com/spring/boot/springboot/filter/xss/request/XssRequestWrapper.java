@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletRequestWrapper;
 import java.io.*;
 
-public class XssRequestWrapper  extends HttpServletRequestWrapper {
+public class XssRequestWrapper extends HttpServletRequestWrapper {
 
     private byte[] rawData;
     private HttpServletRequest request;

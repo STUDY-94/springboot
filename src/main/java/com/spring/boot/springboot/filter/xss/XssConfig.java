@@ -1,6 +1,8 @@
-package com.spring.boot.springboot.filter.xss.response;
+package com.spring.boot.springboot.filter.xss;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.navercorp.lucy.security.xss.servletfilter.XssEscapeServletFilter;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
@@ -11,8 +13,18 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class XssConfig implements WebMvcConfigurer {
 
     @Bean
+    public FilterRegistrationBean<XssEscapeServletFilter> filterRegistrationBean() {
+        FilterRegistrationBean<XssEscapeServletFilter> filterRegistration = new FilterRegistrationBean<>();
+        filterRegistration.setFilter(new XssEscapeServletFilter());
+        filterRegistration.setOrder(1);
+        filterRegistration.addUrlPatterns("/*");
+        return filterRegistration;
+    }
+
+    @Bean
     public MappingJackson2HttpMessageConverter jsonEscapeConverter() {
         // MappingJackson2HttpMessageConverter Default ObjectMapper 설정 및 ObjectMapper Config 설정
+
         ObjectMapper objectMapper = Jackson2ObjectMapperBuilder.json().build();
         objectMapper.getFactory().setCharacterEscapes(new HTMLCharacterEscapes());
         return new MappingJackson2HttpMessageConverter(objectMapper);
