@@ -24,6 +24,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web-services'
     implementation 'org.springframework.boot:spring-boot-starter-validation'
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect'
 
     /* model mapper */
@@ -34,11 +35,13 @@ dependencies {
     implementation 'org.apache.commons:commons-text:1.8'
     implementation group: 'commons-io', name: 'commons-io', version: '2.11.0'
 
+    /* jdbc */
+    implementation group: 'org.mariadb.jdbc', name: 'mariadb-java-client', version: '2.7.4'
+
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-
 
 }
 
