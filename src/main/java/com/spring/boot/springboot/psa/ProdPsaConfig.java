@@ -1,15 +1,16 @@
 package com.spring.boot.springboot.psa;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.mail.MailSender;
-import org.springframework.mail.javamail.JavaMailSenderImpl;
 
 @Configuration
-public class PsaConfig {
+public class ProdPsaConfig {
 
     @Bean
-    public MailSender mailSender() {
+    @Qualifier("prodMailSender2")
+    public MailSender prodMailSender2() {
         return new ProdMailSender();
     }
 }
