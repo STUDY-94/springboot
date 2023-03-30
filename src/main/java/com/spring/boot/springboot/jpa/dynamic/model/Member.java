@@ -22,4 +22,12 @@ public class Member {
     private String delYn;
     private Integer crtBy;
     private Date crtDt;
+
+    public Member() {}
+
+    public Member(int id, String name, Integer age) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+    }
 }
