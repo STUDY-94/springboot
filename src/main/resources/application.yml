@@ -3,8 +3,8 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mariadb://211.216.158.215:3306/study
-    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:log4jdbc:mariadb://211.216.158.215:3306/study
+    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
     username: study94
     password: study94
   jpa:
@@ -13,3 +13,35 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
+
+
+
+#spring.profiles: logging-info
+logging:
+  level:
+    org.thymeleaf: INFO
+    org.springframework.web: INFO
+    org.hibernate.SQL: INFO
+    org.quartz.core: INFO
+    org.h2.server.web: INFO
+  file:
+    name: logs/application.log
+  config: classpath:logback-spring.xml
+
+#
+#---
+#spring.profiles: logging-debug
+#logging:
+#  level:
+#    org.thymeleaf: DEBUG
+#    org.springframework.web: DEBUG
+#    org.hibernate.SQL: DEBUG
+#    org.quartz.core: DEBUG
+#    org.h2.server.web: DEBUG
+#  file:
+#    name: logs/application.log
+#
+#---
+#spring.profiles: logging-daily
+#logging:
+#  config: classpath:logback-spring.xml
