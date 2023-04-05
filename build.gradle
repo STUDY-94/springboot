@@ -43,7 +43,12 @@ dependencies {
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
     annotationProcessor 'org.projectlombok:lombok'
+
+    /* testing */
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+//    testImplementation group: 'org.mockito', name: 'mockito-all', version: '1.10.19'
+
+
 
 }
 
