@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
 
@@ -31,5 +32,19 @@ public class MemberJPAController {
     @ResponseBody
     public ResponseEntity<Member> findOne(@RequestParam int id) {
         return new ResponseEntity<>(memberJPAService.findOne(id), HttpStatus.OK);
+    }
+
+    @GetMapping("/page/members")
+    public ModelAndView renderMembers() {
+        ModelAndView mv = new ModelAndView("member/memberList");
+        mv.addObject("attr1", "attr1");
+        mv.addObject("members", memberJPAService.findAllWithException());
+        return mv;
+    }
+
+    @GetMapping("/hello/member")
+    @ResponseBody
+    public String helloMember() {
+        return "Hello Member";
     }
 }

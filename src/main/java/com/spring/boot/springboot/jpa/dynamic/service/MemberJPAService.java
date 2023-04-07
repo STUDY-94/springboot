@@ -36,4 +36,8 @@ public class MemberJPAService {
     public List<Member> findAll() {
         return memberRepository.findAll();
     }
+
+    public Object findAllWithException() {
+        throw new BusinessException(ErrorCode.INTERNAL_SERVER_ERROR);
+    }
 }

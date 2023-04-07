@@ -10,6 +10,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
@@ -23,6 +24,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
+//@SpringBootTest
 @ExtendWith(SpringExtension.class)
 @WebMvcTest(MemberJPAController.class)
 public class MemberControllerTest {
@@ -52,20 +54,42 @@ public class MemberControllerTest {
     }
 
     @Test
-    @DisplayName("id=1인 멤버가 존재하지 않아 예외 발생")
+    @DisplayName("id=1인 멤버가 존재하지 않으면 예외 발생")
     void _2() throws Exception {
 
+        //given
         given(memberJPAService.findOne(1)).willThrow(new BusinessException(ErrorCode.MEMBER_NOT_FOUND));
 
+
+        //when
         final ResultActions actions = mockMvc.perform(get("/jpa/member?id=1")
                 .contentType(MediaType.APPLICATION_JSON));
 
+
+        //then
         actions
                 .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
 //                .andExpect(status().is4xxClientError())
-                .andExpect(jsonPath("status").value(400))
-                .andExpect(jsonPath("message").value("no Member on search condition"))
+                .andExpect(jsonPath("status").value(ErrorCode.MEMBER_NOT_FOUND.getStatus()))
+                .andExpect(jsonPath("message").value(ErrorCode.MEMBER_NOT_FOUND.getMessage()))
                 .andExpect(jsonPath("code").value(ErrorCode.MEMBER_NOT_FOUND.getCode()));
 //                .andDo(print());
+    }
+
+    @Test
+    @DisplayName("멤버 목록 화면 요청")
+    void _3() throws Exception {
+        //given
+
+        //when
+        final ResultActions actions = mockMvc.perform(get("/page/members")
+                .contentType(MediaType.TEXT_HTML));
+
+        //then
+        actions
+                .andExpect(status().isOk())
+                .andExpect(view().name("member/memberList"))
+                .andExpect(model().attributeExists("attr1"))
+                .andExpect(model().attribute("attr1", "attr1"));
     }
 }
