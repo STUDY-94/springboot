@@ -12,6 +12,11 @@ public class LockService {
     @Autowired
     LockRepository lockRepository;
 
+    @Transactional
+    public Person save(Person person) {
+        return lockRepository.save(person);
+    }
+
     @Transactional(readOnly = true)
     public Person findById(Long id) {
         Optional<Person> byId = lockRepository.findById(id);

@@ -1,0 +1,296 @@
+2023:05:17 00:00:33.434 INFO  --- [Test worker] c.s.b.s.jpa.lock.OptimisticLockTest : Starting OptimisticLockTest using Java 19.0.2 on yutaehyeong-ui-MacBookPro-2.local with PID 52803 (started by yutaehyeong in /Users/yutaehyeong/dev/study/springboot) 
+2023:05:17 00:00:33.437 INFO  --- [Test worker] c.s.b.s.jpa.lock.OptimisticLockTest : No active profile set, falling back to 1 default profile: "default" 
+2023:05:17 00:00:33.823 INFO  --- [Test worker] o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2023:05:17 00:00:33.851 INFO  --- [Test worker] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 3 JPA repository interfaces. 
+2023:05:17 00:00:33.996 INFO  --- [Test worker] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$9ddc102c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2023:05:17 00:00:34.016 INFO  --- [Test worker] o.s.w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0] 
+2023:05:17 00:00:34.184 INFO  --- [Test worker] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default] 
+2023:05:17 00:00:34.217 INFO  --- [Test worker] org.hibernate.Version : HHH000412: Hibernate ORM core version 5.6.14.Final 
+2023:05:17 00:00:34.292 INFO  --- [Test worker] o.h.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2023:05:17 00:00:34.329 INFO  --- [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2023:05:17 00:00:34.520 INFO  --- [Test worker] log4jdbc.log4j2 : 1. Connection opened. {executed in 184ms}  
+2023:05:17 00:00:34.521 INFO  --- [Test worker] log4jdbc.log4j2 : 1. Connection.new Connection returned  
+2023:05:17 00:00:34.521 INFO  --- [Test worker] log4jdbc.log4j2 : 1. Connection.getNetworkTimeout() returned 0 
+2023:05:17 00:00:34.521 INFO  --- [Test worker] log4jdbc.log4j2 : 1. Connection.isReadOnly() returned false 
+2023:05:17 00:00:34.521 INFO  --- [Test worker] log4jdbc.log4j2 : 1. Connection.getAutoCommit() returned true 
+2023:05:17 00:00:34.526 INFO  --- [Test worker] log4jdbc.log4j2 : 1. Connection.isValid(1) returned true 
+2023:05:17 00:00:34.534 INFO  --- [Test worker] log4jdbc.log4j2 : 1. Connection.getTransactionIsolation() returned 4 
+2023:05:17 00:00:34.535 INFO  --- [Test worker] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2023:05:17 00:00:34.537 INFO  --- [Test worker] log4jdbc.log4j2 : 1. Connection.getMetaData() returned org.mariadb.jdbc.MariaDbDatabaseMetaData@7b3c2ae0 
+2023:05:17 00:00:34.539 INFO  --- [Test worker] log4jdbc.log4j2 : 1. Connection.getMetaData() returned org.mariadb.jdbc.MariaDbDatabaseMetaData@fe08eaf 
+2023:05:17 00:00:34.549 INFO  --- [Test worker] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MariaDB106Dialect 
+2023:05:17 00:00:34.560 INFO  --- [Test worker] log4jdbc.log4j2 : 1. Connection.getCatalog() returned study 
+2023:05:17 00:00:34.561 INFO  --- [Test worker] log4jdbc.log4j2 : 1. Connection.getSchema() returned null 
+2023:05:17 00:00:34.561 INFO  --- [Test worker] log4jdbc.log4j2 : 1. Connection.getSchema() returned null 
+2023:05:17 00:00:34.562 INFO  --- [Test worker] log4jdbc.log4j2 : 1. Connection.getMetaData() returned org.mariadb.jdbc.MariaDbDatabaseMetaData@2152fde5 
+2023:05:17 00:00:34.563 INFO  --- [Test worker] log4jdbc.log4j2 : 1. Connection.createClob() returned  
+2023:05:17 00:00:34.565 INFO  --- [Test worker] log4jdbc.log4j2 : 1. Connection.clearWarnings() returned  
+2023:05:17 00:00:34.666 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 2. Connection opened. {executed in 26ms}  
+2023:05:17 00:00:34.667 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 2. Connection.new Connection returned  
+2023:05:17 00:00:34.667 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 2. Connection.isReadOnly() returned false 
+2023:05:17 00:00:34.667 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 2. Connection.getAutoCommit() returned true 
+2023:05:17 00:00:34.698 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 3. Connection opened. {executed in 31ms}  
+2023:05:17 00:00:34.698 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 3. Connection.new Connection returned  
+2023:05:17 00:00:34.698 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 3. Connection.isReadOnly() returned false 
+2023:05:17 00:00:34.698 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 3. Connection.getAutoCommit() returned true 
+2023:05:17 00:00:34.727 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 4. Connection opened. {executed in 29ms}  
+2023:05:17 00:00:34.728 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 4. Connection.new Connection returned  
+2023:05:17 00:00:34.728 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 4. Connection.isReadOnly() returned false 
+2023:05:17 00:00:34.728 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 4. Connection.getAutoCommit() returned true 
+2023:05:17 00:00:34.752 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 5. Connection opened. {executed in 24ms}  
+2023:05:17 00:00:34.752 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 5. Connection.new Connection returned  
+2023:05:17 00:00:34.752 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 5. Connection.isReadOnly() returned false 
+2023:05:17 00:00:34.752 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 5. Connection.getAutoCommit() returned true 
+2023:05:17 00:00:34.777 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 6. Connection opened. {executed in 25ms}  
+2023:05:17 00:00:34.777 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 6. Connection.new Connection returned  
+2023:05:17 00:00:34.777 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 6. Connection.isReadOnly() returned false 
+2023:05:17 00:00:34.777 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 6. Connection.getAutoCommit() returned true 
+2023:05:17 00:00:34.803 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 7. Connection opened. {executed in 26ms}  
+2023:05:17 00:00:34.804 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 7. Connection.new Connection returned  
+2023:05:17 00:00:34.804 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 7. Connection.isReadOnly() returned false 
+2023:05:17 00:00:34.804 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 7. Connection.getAutoCommit() returned true 
+2023:05:17 00:00:34.824 INFO  --- [Test worker] log4jdbc.log4j2 : 1. Connection.getAutoCommit() returned true 
+2023:05:17 00:00:34.827 INFO  --- [Test worker] log4jdbc.log4j2 : 1. PreparedStatement.new PreparedStatement returned  
+2023:05:17 00:00:34.827 INFO  --- [Test worker] log4jdbc.log4j2 : 1. Connection.prepareStatement(select table_name from information_schema.tables where table_schema = database() and table_type = 'SEQUENCE') returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@35dc849b 
+2023:05:17 00:00:34.830 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 8. Connection opened. {executed in 26ms}  
+2023:05:17 00:00:34.830 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 8. Connection.new Connection returned  
+2023:05:17 00:00:34.830 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 8. Connection.isReadOnly() returned false 
+2023:05:17 00:00:34.830 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 8. Connection.getAutoCommit() returned true 
+2023:05:17 00:00:34.835 INFO  --- [Test worker] log4jdbc.log4j2 : 1. select table_name from information_schema.tables where table_schema = database() and table_type 
+= 'SEQUENCE'  {executed in 6 ms} 
+2023:05:17 00:00:34.837 INFO  --- [Test worker] log4jdbc.log4j2 : 1. ResultSet.new ResultSet returned  
+2023:05:17 00:00:34.837 INFO  --- [Test worker] log4jdbc.log4j2 : 1. PreparedStatement.executeQuery() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@194eae3e 
+2023:05:17 00:00:34.839 INFO  --- [Test worker] log4jdbc.log4j2 : 1. ResultSet.next() returned true 
+2023:05:17 00:00:34.839 INFO  --- [Test worker] log4jdbc.log4j2 : 1. ResultSet.getString(1) returned hibernate_sequence 
+2023:05:17 00:00:34.839 INFO  --- [Test worker] log4jdbc.log4j2 : 
+|-------------------|
+|table_name         |
+|-------------------|
+|hibernate_sequence |
+|-------------------|
+ 
+2023:05:17 00:00:34.839 INFO  --- [Test worker] log4jdbc.log4j2 : 1. ResultSet.next() returned false 
+2023:05:17 00:00:34.839 INFO  --- [Test worker] log4jdbc.log4j2 : 1. ResultSet.close() returned void 
+2023:05:17 00:00:34.839 INFO  --- [Test worker] log4jdbc.log4j2 : 1. PreparedStatement.close() returned  
+2023:05:17 00:00:34.840 INFO  --- [Test worker] log4jdbc.log4j2 : 1. PreparedStatement.new PreparedStatement returned  
+2023:05:17 00:00:34.840 INFO  --- [Test worker] log4jdbc.log4j2 : 1. Connection.prepareStatement(SELECT 'hibernate_sequence' as sequence_name, minimum_value, maximum_value, start_value, increment, cache_size FROM hibernate_sequence ) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@2245ccaa 
+2023:05:17 00:00:34.846 INFO  --- [Test worker] log4jdbc.log4j2 : 1. SELECT 'hibernate_sequence' as sequence_name, minimum_value, maximum_value, start_value, increment, 
+cache_size FROM hibernate_sequence  {executed in 6 ms} 
+2023:05:17 00:00:34.846 INFO  --- [Test worker] log4jdbc.log4j2 : 1. ResultSet.new ResultSet returned  
+2023:05:17 00:00:34.846 INFO  --- [Test worker] log4jdbc.log4j2 : 1. PreparedStatement.executeQuery() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@22b10124 
+2023:05:17 00:00:34.846 INFO  --- [Test worker] log4jdbc.log4j2 : 1. ResultSet.next() returned true 
+2023:05:17 00:00:34.847 INFO  --- [Test worker] log4jdbc.log4j2 : 1. ResultSet.getString(1) returned hibernate_sequence 
+2023:05:17 00:00:34.847 INFO  --- [Test worker] log4jdbc.log4j2 : 1. ResultSet.getLong(start_value) returned 1 
+2023:05:17 00:00:34.847 INFO  --- [Test worker] log4jdbc.log4j2 : 1. ResultSet.getLong(minimum_value) returned 1 
+2023:05:17 00:00:34.847 INFO  --- [Test worker] log4jdbc.log4j2 : 1. ResultSet.getLong(maximum_value) returned 9223372036854775806 
+2023:05:17 00:00:34.847 INFO  --- [Test worker] log4jdbc.log4j2 : 1. ResultSet.getLong(increment) returned 1 
+2023:05:17 00:00:34.847 INFO  --- [Test worker] log4jdbc.log4j2 : 
+|-------------------|--------------|--------------------|------------|----------|-----------|
+|sequence_name      |minimum_value |maximum_value       |start_value |increment |cache_size |
+|-------------------|--------------|--------------------|------------|----------|-----------|
+|hibernate_sequence |1             |9223372036854775806 |1           |1         |[unread]   |
+|-------------------|--------------|--------------------|------------|----------|-----------|
+ 
+2023:05:17 00:00:34.847 INFO  --- [Test worker] log4jdbc.log4j2 : 1. ResultSet.next() returned false 
+2023:05:17 00:00:34.847 INFO  --- [Test worker] log4jdbc.log4j2 : 1. ResultSet.close() returned void 
+2023:05:17 00:00:34.847 INFO  --- [Test worker] log4jdbc.log4j2 : 1. PreparedStatement.close() returned  
+2023:05:17 00:00:34.849 INFO  --- [Test worker] log4jdbc.log4j2 : 1. Connection.getMetaData() returned org.mariadb.jdbc.MariaDbDatabaseMetaData@1c681761 
+2023:05:17 00:00:34.856 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 9. Connection opened. {executed in 26ms}  
+2023:05:17 00:00:34.856 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 9. Connection.new Connection returned  
+2023:05:17 00:00:34.856 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 9. Connection.isReadOnly() returned false 
+2023:05:17 00:00:34.856 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 9. Connection.getAutoCommit() returned true 
+2023:05:17 00:00:34.869 INFO  --- [Test worker] log4jdbc.log4j2 : 1. Connection.clearWarnings() returned  
+2023:05:17 00:00:34.870 INFO  --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2023:05:17 00:00:34.873 INFO  --- [Test worker] o.s.o.j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2023:05:17 00:00:34.881 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 10. Connection opened. {executed in 25ms}  
+2023:05:17 00:00:34.881 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 10. Connection.new Connection returned  
+2023:05:17 00:00:34.883 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 10. Connection.isReadOnly() returned false 
+2023:05:17 00:00:34.883 INFO  --- [HikariPool-1 connection adder] log4jdbc.log4j2 : 10. Connection.getAutoCommit() returned true 
+2023:05:17 00:00:35.766 INFO  --- [Test worker] c.s.b.s.jpa.lock.OptimisticLockTest : Started OptimisticLockTest in 2.501 seconds (JVM running for 2.963) 
+2023:05:17 00:00:36.012 INFO  --- [Test worker] log4jdbc.log4j2 : 1. Connection.isValid(5) returned true 
+2023:05:17 00:00:36.013 INFO  --- [Test worker] log4jdbc.log4j2 : 1. Connection.getAutoCommit() returned true 
+2023:05:17 00:00:36.019 INFO  --- [Test worker] log4jdbc.log4j2 : 1. Connection.setAutoCommit(false) returned  
+2023:05:17 00:00:36.038 INFO  --- [Test worker] log4jdbc.log4j2 : 1. PreparedStatement.new PreparedStatement returned  
+2023:05:17 00:00:36.038 INFO  --- [Test worker] log4jdbc.log4j2 : 1. Connection.prepareStatement(/* insert com.spring.boot.springboot.jpa.lock.product.Product */ insert into product (name, quantity, version) values (?, ?, ?), 1) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@513fb873 
+2023:05:17 00:00:36.039 INFO  --- [Test worker] log4jdbc.log4j2 : 1. PreparedStatement.setNull(1, 12) returned  
+2023:05:17 00:00:36.039 INFO  --- [Test worker] log4jdbc.log4j2 : 1. PreparedStatement.setInt(2, 3) returned  
+2023:05:17 00:00:36.040 INFO  --- [Test worker] log4jdbc.log4j2 : 1. PreparedStatement.setInt(3, 0) returned  
+2023:05:17 00:00:36.048 INFO  --- [Test worker] log4jdbc.log4j2 : 1. /* insert com.spring.boot.springboot.jpa.lock.product.Product */ insert into product (name, 
+quantity, version) values (NULL, 3, 0)  {executed in 8 ms} 
+2023:05:17 00:00:36.049 INFO  --- [Test worker] log4jdbc.log4j2 : 1. PreparedStatement.executeUpdate() returned 1 
+2023:05:17 00:00:36.049 INFO  --- [Test worker] log4jdbc.log4j2 : 1. getGeneratedKeys on query: /* insert com.spring.boot.springboot.jpa.lock.product.Product */ 
+insert into product (name, quantity, version) values (NULL, 3, 0)  {executed in 0 ms} 
+2023:05:17 00:00:36.049 INFO  --- [Test worker] log4jdbc.log4j2 : 1. ResultSet.new ResultSet returned  
+2023:05:17 00:00:36.049 INFO  --- [Test worker] log4jdbc.log4j2 : 1. PreparedStatement.getGeneratedKeys() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@5d7f4cbb 
+2023:05:17 00:00:36.049 INFO  --- [Test worker] log4jdbc.log4j2 : 1. ResultSet.next() returned true 
+2023:05:17 00:00:36.050 INFO  --- [Test worker] log4jdbc.log4j2 : 1. ResultSet.getMetaData() returned org.mariadb.jdbc.MariaDbResultSetMetaData@3284f91f 
+2023:05:17 00:00:36.050 INFO  --- [Test worker] log4jdbc.log4j2 : 1. ResultSet.getLong(1) returned 12 
+2023:05:17 00:00:36.050 INFO  --- [Test worker] log4jdbc.log4j2 : 
+|----------|
+|insert_id |
+|----------|
+|12        |
+|----------|
+ 
+2023:05:17 00:00:36.050 INFO  --- [Test worker] log4jdbc.log4j2 : 1. ResultSet.close() returned void 
+2023:05:17 00:00:36.050 INFO  --- [Test worker] log4jdbc.log4j2 : 1. PreparedStatement.getMaxRows() returned 0 
+2023:05:17 00:00:36.050 INFO  --- [Test worker] log4jdbc.log4j2 : 1. PreparedStatement.getQueryTimeout() returned 0 
+2023:05:17 00:00:36.050 INFO  --- [Test worker] log4jdbc.log4j2 : 1. PreparedStatement.close() returned  
+2023:05:17 00:00:36.063 INFO  --- [Test worker] log4jdbc.log4j2 : 1. Connection.commit() returned  
+2023:05:17 00:00:36.070 INFO  --- [Test worker] log4jdbc.log4j2 : 1. Connection.setAutoCommit(true) returned  
+2023:05:17 00:00:36.070 INFO  --- [Test worker] log4jdbc.log4j2 : 1. Connection.clearWarnings() returned  
+2023:05:17 00:00:36.070 INFO  --- [Test worker] log4jdbc.log4j2 : 1. Connection.clearWarnings() returned  
+2023:05:17 00:00:36.071 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 1. Connection.getAutoCommit() returned true 
+2023:05:17 00:00:36.076 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 1. Connection.setAutoCommit(false) returned  
+2023:05:17 00:00:36.076 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. Connection.isValid(5) returned true 
+2023:05:17 00:00:36.076 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. Connection.isValid(5) returned true 
+2023:05:17 00:00:36.076 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. Connection.getAutoCommit() returned true 
+2023:05:17 00:00:36.077 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. Connection.getAutoCommit() returned true 
+2023:05:17 00:00:36.082 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 1. PreparedStatement.new PreparedStatement returned  
+2023:05:17 00:00:36.083 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 1. Connection.prepareStatement(select product0_.id as id1_2_0_, product0_.name as name2_2_0_, product0_.quantity as quantity3_2_0_, product0_.version as version4_2_0_ from product product0_ where product0_.id=?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@d264db6 
+2023:05:17 00:00:36.083 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. Connection.setAutoCommit(false) returned  
+2023:05:17 00:00:36.083 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. Connection.setAutoCommit(false) returned  
+2023:05:17 00:00:36.083 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 1. PreparedStatement.setLong(1, 12) returned  
+2023:05:17 00:00:36.083 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. PreparedStatement.new PreparedStatement returned  
+2023:05:17 00:00:36.083 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. PreparedStatement.new PreparedStatement returned  
+2023:05:17 00:00:36.083 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. Connection.prepareStatement(select product0_.id as id1_2_0_, product0_.name as name2_2_0_, product0_.quantity as quantity3_2_0_, product0_.version as version4_2_0_ from product product0_ where product0_.id=?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@136cbe8a 
+2023:05:17 00:00:36.083 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. Connection.prepareStatement(select product0_.id as id1_2_0_, product0_.name as name2_2_0_, product0_.quantity as quantity3_2_0_, product0_.version as version4_2_0_ from product product0_ where product0_.id=?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@3bad795d 
+2023:05:17 00:00:36.083 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. PreparedStatement.setLong(1, 12) returned  
+2023:05:17 00:00:36.083 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. PreparedStatement.setLong(1, 12) returned  
+2023:05:17 00:00:36.088 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 1. select product0_.id as id1_2_0_, product0_.name as name2_2_0_, product0_.quantity as quantity3_2_0_, 
+product0_.version as version4_2_0_ from product product0_ where product0_.id=12  {executed in 5 ms} 
+2023:05:17 00:00:36.088 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 1. ResultSet.new ResultSet returned  
+2023:05:17 00:00:36.088 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 1. PreparedStatement.executeQuery() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@1af9ab79 
+2023:05:17 00:00:36.089 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 1. ResultSet.next() returned true 
+2023:05:17 00:00:36.090 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. select product0_.id as id1_2_0_, product0_.name as name2_2_0_, product0_.quantity as quantity3_2_0_, 
+product0_.version as version4_2_0_ from product product0_ where product0_.id=12  {executed in 7 ms} 
+2023:05:17 00:00:36.090 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. select product0_.id as id1_2_0_, product0_.name as name2_2_0_, product0_.quantity as quantity3_2_0_, 
+product0_.version as version4_2_0_ from product product0_ where product0_.id=12  {executed in 7 ms} 
+2023:05:17 00:00:36.090 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. ResultSet.new ResultSet returned  
+2023:05:17 00:00:36.090 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. ResultSet.new ResultSet returned  
+2023:05:17 00:00:36.090 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. PreparedStatement.executeQuery() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@3155122d 
+2023:05:17 00:00:36.090 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. PreparedStatement.executeQuery() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@1994d5fa 
+2023:05:17 00:00:36.090 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. ResultSet.next() returned true 
+2023:05:17 00:00:36.090 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. ResultSet.next() returned true 
+2023:05:17 00:00:36.091 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. ResultSet.getString(name2_2_0_) returned void 
+2023:05:17 00:00:36.091 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 1. ResultSet.getString(name2_2_0_) returned void 
+2023:05:17 00:00:36.091 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. ResultSet.getString(name2_2_0_) returned void 
+2023:05:17 00:00:36.091 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. ResultSet.getInt(quantity3_2_0_) returned 3 
+2023:05:17 00:00:36.091 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 1. ResultSet.getInt(quantity3_2_0_) returned 3 
+2023:05:17 00:00:36.091 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. ResultSet.wasNull() returned false 
+2023:05:17 00:00:36.091 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. ResultSet.getInt(quantity3_2_0_) returned 3 
+2023:05:17 00:00:36.091 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 1. ResultSet.wasNull() returned false 
+2023:05:17 00:00:36.091 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. ResultSet.wasNull() returned false 
+2023:05:17 00:00:36.091 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. ResultSet.getInt(version4_2_0_) returned 0 
+2023:05:17 00:00:36.091 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 1. ResultSet.getInt(version4_2_0_) returned 0 
+2023:05:17 00:00:36.091 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. ResultSet.getInt(version4_2_0_) returned 0 
+2023:05:17 00:00:36.091 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. ResultSet.wasNull() returned false 
+2023:05:17 00:00:36.091 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 1. ResultSet.wasNull() returned false 
+2023:05:17 00:00:36.091 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. ResultSet.wasNull() returned false 
+2023:05:17 00:00:36.092 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 
+|---------|-----|---------|--------|
+|id       |name |quantity |version |
+|---------|-----|---------|--------|
+|[unread] |null |3        |0       |
+|---------|-----|---------|--------|
+ 
+2023:05:17 00:00:36.092 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 1. ResultSet.next() returned false 
+2023:05:17 00:00:36.092 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 
+|---------|-----|---------|--------|
+|id       |name |quantity |version |
+|---------|-----|---------|--------|
+|[unread] |null |3        |0       |
+|---------|-----|---------|--------|
+ 
+2023:05:17 00:00:36.092 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 
+|---------|-----|---------|--------|
+|id       |name |quantity |version |
+|---------|-----|---------|--------|
+|[unread] |null |3        |0       |
+|---------|-----|---------|--------|
+ 
+2023:05:17 00:00:36.092 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. ResultSet.next() returned false 
+2023:05:17 00:00:36.092 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. ResultSet.next() returned false 
+2023:05:17 00:00:36.094 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. ResultSet.close() returned void 
+2023:05:17 00:00:36.094 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 1. ResultSet.close() returned void 
+2023:05:17 00:00:36.094 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. ResultSet.close() returned void 
+2023:05:17 00:00:36.094 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. PreparedStatement.getMaxRows() returned 0 
+2023:05:17 00:00:36.094 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 1. PreparedStatement.getMaxRows() returned 0 
+2023:05:17 00:00:36.094 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. PreparedStatement.getQueryTimeout() returned 0 
+2023:05:17 00:00:36.094 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. PreparedStatement.getMaxRows() returned 0 
+2023:05:17 00:00:36.094 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 1. PreparedStatement.getQueryTimeout() returned 0 
+2023:05:17 00:00:36.094 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. PreparedStatement.close() returned  
+2023:05:17 00:00:36.094 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. PreparedStatement.getQueryTimeout() returned 0 
+2023:05:17 00:00:36.094 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 1. PreparedStatement.close() returned  
+2023:05:17 00:00:36.094 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. PreparedStatement.close() returned  
+2023:05:17 00:00:36.098 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. PreparedStatement.new PreparedStatement returned  
+2023:05:17 00:00:36.098 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. PreparedStatement.new PreparedStatement returned  
+2023:05:17 00:00:36.098 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 1. PreparedStatement.new PreparedStatement returned  
+2023:05:17 00:00:36.098 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. Connection.prepareStatement(/* update com.spring.boot.springboot.jpa.lock.product.Product */ update product set name=?, quantity=?, version=? where id=?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@4d25db8e 
+2023:05:17 00:00:36.098 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. Connection.prepareStatement(/* update com.spring.boot.springboot.jpa.lock.product.Product */ update product set name=?, quantity=?, version=? where id=?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@9a6e0a8 
+2023:05:17 00:00:36.098 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 1. Connection.prepareStatement(/* update com.spring.boot.springboot.jpa.lock.product.Product */ update product set name=?, quantity=?, version=? where id=?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@46bfc96e 
+2023:05:17 00:00:36.098 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. PreparedStatement.setNull(1, 12) returned  
+2023:05:17 00:00:36.099 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. PreparedStatement.setNull(1, 12) returned  
+2023:05:17 00:00:36.099 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. PreparedStatement.setInt(2, 2) returned  
+2023:05:17 00:00:36.099 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 1. PreparedStatement.setNull(1, 12) returned  
+2023:05:17 00:00:36.099 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. PreparedStatement.setInt(2, 2) returned  
+2023:05:17 00:00:36.099 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 1. PreparedStatement.setInt(2, 2) returned  
+2023:05:17 00:00:36.099 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. PreparedStatement.setInt(3, 0) returned  
+2023:05:17 00:00:36.099 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. PreparedStatement.setInt(3, 0) returned  
+2023:05:17 00:00:36.099 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 1. PreparedStatement.setInt(3, 0) returned  
+2023:05:17 00:00:36.099 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. PreparedStatement.setLong(4, 12) returned  
+2023:05:17 00:00:36.099 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. PreparedStatement.setLong(4, 12) returned  
+2023:05:17 00:00:36.099 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 1. PreparedStatement.setLong(4, 12) returned  
+2023:05:17 00:00:36.105 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. /* update com.spring.boot.springboot.jpa.lock.product.Product */ update product set name=NULL, 
+quantity=2, version=0 where id=12  {executed in 6 ms} 
+2023:05:17 00:00:36.105 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. PreparedStatement.executeUpdate() returned 1 
+2023:05:17 00:00:36.105 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. PreparedStatement.getMaxRows() returned 0 
+2023:05:17 00:00:36.105 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. PreparedStatement.getQueryTimeout() returned 0 
+2023:05:17 00:00:36.106 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. PreparedStatement.close() returned  
+2023:05:17 00:00:36.113 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. /* update com.spring.boot.springboot.jpa.lock.product.Product */ update product set name=NULL, 
+quantity=2, version=0 where id=12  {executed in 14 ms} 
+2023:05:17 00:00:36.113 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. PreparedStatement.executeUpdate() returned 1 
+2023:05:17 00:00:36.113 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. PreparedStatement.getMaxRows() returned 0 
+2023:05:17 00:00:36.113 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. PreparedStatement.getQueryTimeout() returned 0 
+2023:05:17 00:00:36.113 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. PreparedStatement.close() returned  
+2023:05:17 00:00:36.114 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. Connection.commit() returned  
+2023:05:17 00:00:36.119 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. Connection.commit() returned  
+2023:05:17 00:00:36.119 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 1. /* update com.spring.boot.springboot.jpa.lock.product.Product */ update product set name=NULL, 
+quantity=2, version=0 where id=12  {executed in 20 ms} 
+2023:05:17 00:00:36.119 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 1. PreparedStatement.executeUpdate() returned 1 
+2023:05:17 00:00:36.119 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 1. PreparedStatement.getMaxRows() returned 0 
+2023:05:17 00:00:36.119 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 1. PreparedStatement.getQueryTimeout() returned 0 
+2023:05:17 00:00:36.119 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 1. PreparedStatement.close() returned  
+2023:05:17 00:00:36.120 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. Connection.setAutoCommit(true) returned  
+2023:05:17 00:00:36.120 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. Connection.clearWarnings() returned  
+2023:05:17 00:00:36.120 INFO  --- [pool-2-thread-2] log4jdbc.log4j2 : 2. Connection.clearWarnings() returned  
+2023:05:17 00:00:36.127 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. Connection.setAutoCommit(true) returned  
+2023:05:17 00:00:36.127 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 1. Connection.commit() returned  
+2023:05:17 00:00:36.127 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. Connection.clearWarnings() returned  
+2023:05:17 00:00:36.127 INFO  --- [pool-2-thread-3] log4jdbc.log4j2 : 3. Connection.clearWarnings() returned  
+2023:05:17 00:00:36.134 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 1. Connection.setAutoCommit(true) returned  
+2023:05:17 00:00:36.134 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 1. Connection.clearWarnings() returned  
+2023:05:17 00:00:36.134 INFO  --- [pool-2-thread-1] log4jdbc.log4j2 : 1. Connection.clearWarnings() returned  
+2023:05:17 00:00:36.153 INFO  --- [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default' 
+2023:05:17 00:00:36.154 INFO  --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2023:05:17 00:00:36.158 INFO  --- [HikariPool-1 connection closer] log4jdbc.log4j2 : 1. Connection closed. {executed in 4ms}  
+2023:05:17 00:00:36.158 INFO  --- [HikariPool-1 connection closer] log4jdbc.log4j2 : 1. Connection.close() returned  
+2023:05:17 00:00:36.161 INFO  --- [HikariPool-1 connection closer] log4jdbc.log4j2 : 2. Connection closed. {executed in 3ms}  
+2023:05:17 00:00:36.161 INFO  --- [HikariPool-1 connection closer] log4jdbc.log4j2 : 2. Connection.close() returned  
+2023:05:17 00:00:36.164 INFO  --- [HikariPool-1 connection closer] log4jdbc.log4j2 : 3. Connection closed. {executed in 3ms}  
+2023:05:17 00:00:36.164 INFO  --- [HikariPool-1 connection closer] log4jdbc.log4j2 : 3. Connection.close() returned  
+2023:05:17 00:00:36.167 INFO  --- [HikariPool-1 connection closer] log4jdbc.log4j2 : 4. Connection closed. {executed in 3ms}  
+2023:05:17 00:00:36.168 INFO  --- [HikariPool-1 connection closer] log4jdbc.log4j2 : 4. Connection.close() returned  
+2023:05:17 00:00:36.171 INFO  --- [HikariPool-1 connection closer] log4jdbc.log4j2 : 5. Connection closed. {executed in 3ms}  
+2023:05:17 00:00:36.171 INFO  --- [HikariPool-1 connection closer] log4jdbc.log4j2 : 5. Connection.close() returned  
+2023:05:17 00:00:36.174 INFO  --- [HikariPool-1 connection closer] log4jdbc.log4j2 : 6. Connection closed. {executed in 3ms}  
+2023:05:17 00:00:36.174 INFO  --- [HikariPool-1 connection closer] log4jdbc.log4j2 : 6. Connection.close() returned  
+2023:05:17 00:00:36.177 INFO  --- [HikariPool-1 connection closer] log4jdbc.log4j2 : 7. Connection closed. {executed in 3ms}  
+2023:05:17 00:00:36.177 INFO  --- [HikariPool-1 connection closer] log4jdbc.log4j2 : 7. Connection.close() returned  
+2023:05:17 00:00:36.180 INFO  --- [HikariPool-1 connection closer] log4jdbc.log4j2 : 8. Connection closed. {executed in 3ms}  
+2023:05:17 00:00:36.180 INFO  --- [HikariPool-1 connection closer] log4jdbc.log4j2 : 8. Connection.close() returned  
+2023:05:17 00:00:36.184 INFO  --- [HikariPool-1 connection closer] log4jdbc.log4j2 : 9. Connection closed. {executed in 4ms}  
+2023:05:17 00:00:36.184 INFO  --- [HikariPool-1 connection closer] log4jdbc.log4j2 : 9. Connection.close() returned  
+2023:05:17 00:00:36.187 INFO  --- [HikariPool-1 connection closer] log4jdbc.log4j2 : 10. Connection closed. {executed in 3ms}  
+2023:05:17 00:00:36.187 INFO  --- [HikariPool-1 connection closer] log4jdbc.log4j2 : 10. Connection.close() returned  
+2023:05:17 00:00:36.187 INFO  --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 
